@@ -87,9 +87,6 @@ The world-pass redirect and the readable-depth bind are **universal primitives o
 the engine + the D3D9 render-target / depth bind). They are exposed through `OnWorldRenderEnd`'s
 `superSampleSource` / `depthSource` / `proj`; the SSAA factor is driven through the proxy exports
 `WxlSetSsaaFactor` / `WxlGetSsaaFactor`. Everything above (the D3D12 backend and the effects) is this module's.
-`Framework` is a promotion candidate: once the effect set is proven it could move to the core as a reusable
-D3D12 helper any GPU-side module shares. See the verified hook map in
-`_docs/re_comprehension/335/render_pipeline_supersampling.md`.
 
 ## Layout
 
